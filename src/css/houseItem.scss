@@ -1,0 +1,29 @@
+.item-container {
+  width: 150px;
+  //   height: 200px;
+  margin: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.369);
+  padding: 0;
+}
+
+.house-img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  //   height: 100%;
+}
+
+.house-info {
+  padding: 5px;
+}
+.house-title {
+  font-size: 14px;
+  height: 1.2rem;
+  overflow-y: hidden;
+  color: rgb(234, 94, 118);
+}
+.house-gender {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+}
