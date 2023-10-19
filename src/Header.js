@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CgMenu } from "react-icons/cg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import login, { loginAction } from "./store/login";
 
 // 스타일드 컴포넌트를 생성
 const HeaderContainer = styled.div`
@@ -83,7 +85,9 @@ const OffMenu = styled.div`
 
 function Header() {
   const [show, setShow] = useState(false);
-
+  const isLogin = useSelector((state) => state.login.isLogin);
+  const dispatch = useDispatch();
+  console.log(isLogin);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -117,6 +121,7 @@ function Header() {
                 서비스 소개
               </Link>
             </MenuItem>
+
             <MenuItem>
               <Link
                 style={{ color: "black", textDecorationLine: "none" }}
@@ -143,15 +148,21 @@ function Header() {
           <Offcanvas.Title>나혼자안산다</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Link
-            style={{ color: "black", textDecorationLine: "none" }}
-            to="/login"
-          >
-            <div style={{ display: "flex" }}>
-              <Login>로그인</Login>
-              <Login>회원가입</Login>
-            </div>
-          </Link>
+          {isLogin ? (
+            <Login onClick={() => dispatch(loginAction.logout())}>
+              로그아웃
+            </Login>
+          ) : (
+            <Link
+              style={{ color: "black", textDecorationLine: "none" }}
+              to="/login"
+            >
+              <div style={{ display: "flex" }}>
+                <Login>로그인</Login>
+                <Login>회원가입</Login>
+              </div>
+            </Link>
+          )}
           <OffMenu>
             <Link
               style={{ color: "black", textDecorationLine: "none" }}
@@ -160,6 +171,16 @@ function Header() {
               방 찾기
             </Link>
           </OffMenu>
+          {isLogin && (
+            <OffMenu>
+              <Link
+                style={{ color: "black", textDecorationLine: "none" }}
+                to="/favorite"
+              >
+                찜한 방
+              </Link>
+            </OffMenu>
+          )}
           <OffMenu>
             <Link
               style={{ color: "black", textDecorationLine: "none" }}

@@ -36,6 +36,8 @@ export const houses = [
     gender: "여성전용",
     deposit: 100,
     rent: 35,
+    imgPath:
+      "https://cdn.ggumim.co.kr/cache/star/600/202105080042048JDlQZfKuR.jpeg",
   },
   {
     title: "신림역 역세권 쉐하",
@@ -46,6 +48,8 @@ export const houses = [
     gender: "남성전용",
     deposit: 200,
     rent: 45,
+    imgPath:
+      "https://blog.kakaocdn.net/dn/ba7rdD/btqyh0zZbTB/wLoKa4OJocFqbOOPuQ8CY0/img.png",
   },
   {
     title: "함께살아요",
@@ -56,6 +60,8 @@ export const houses = [
     gender: "여성전용",
     deposit: 150,
     rent: 32,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLpeLXRPW47ZNM29aAsRwGvqhOMm7ca_sI7A&usqp=CAU",
   },
   {
     title: "대학생 환영!",
@@ -66,6 +72,8 @@ export const houses = [
     gender: "남성전용",
     deposit: 120,
     rent: 40,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShs_OMaLD7O97FWmWVqpOKcCdEAQClXKmz-A&usqp=CAU",
   },
   {
     title: "홍대 근처 직장인 쉐하",
@@ -76,6 +84,8 @@ export const houses = [
     gender: "여성전용",
     deposit: 110,
     rent: 25,
+    imgPath:
+      "https://cdn.ggumim.co.kr/cache/star/600/20220126164944uMvi9QEkS9.jpeg",
   },
   {
     title: "외국인도 거주가능!",
@@ -86,6 +96,8 @@ export const houses = [
     gender: "남성전용",
     deposit: 170,
     rent: 17,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSTH5hzy5sgVpt4sCGSSj8m8pIpyg0uub0g&usqp=CAU",
   },
   {
     title: "스프레틱스지롱",
@@ -96,6 +108,8 @@ export const houses = [
     gender: "여성전용",
     deposit: 300,
     rent: 50,
+    imgPath:
+      "https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/1551338760020_CnahmbPF.jpg?gif=1&w=720",
   },
   {
     title: "살기좋은 후암동 하메구함",
@@ -106,21 +120,109 @@ export const houses = [
     gender: "남성전용",
     deposit: 500,
     rent: 25,
+    imgPath:
+      "https://i.pinimg.com/1200x/7b/19/cc/7b19cc751ca9bccb151b3f2a6cfb44c8.jpg",
   },
-  // {
-  //   title: "신림역 역세권 쉐하",
-  //   houseID: 2,
-  //   placeID: 5,
-  //   placeName: "관악구",
-  //   place: "서울시 관악구 신림동 626-65",
-  //   gender: "남성전용",
-  // },
-  // {
-  //   title: "신림역 역세권 쉐하",
-  //   houseID: 2,
-  //   placeID: 5,
-  //   placeName: "관악구",
-  //   place: "서울시 관악구 신림동 626-65",
-  //   gender: "남성전용",
-  // },
+  {
+    title: "welcome",
+    houseID: 9,
+    placeID: 2,
+    placeName: "강동구",
+    place: "서울시 강동구 성내동 540",
+    gender: "여성전용",
+    imgPath:
+      "https://contents-cdn.viewus.co.kr/image/230131/eebcdc29-620a-455d-be3e-6b9e9af82d9b.jpeg",
+  },
+  {
+    title: "두명 입주 가능",
+    houseID: 10,
+    placeID: 6,
+    placeName: "광진구",
+    place: "서울시 광진구 아차산로 262",
+    gender: "남성전용",
+    imgPath:
+      "https://cdn.ggumim.co.kr/cache/star/600/20220110171043YYfUggPqsx.jpg",
+  },
+  {
+    title: "석촌호수 뷰 아파트입니다",
+    houseID: 11,
+    placeID: 18,
+    placeName: "송파구",
+    place: "서울시 송파구 올림픽로 35길 94",
+    gender: "남성전용",
+    imgPath:
+      "https://dev-archisketch-resources.s3.ap-northeast-2.amazonaws.com/seesoop/v2/Interiorideas_HJ/1630984521_%EB%A6%AC%EB%B9%99%EB%A3%B8_%EC%A0%84%EC%B2%B4.jpg",
+  },
+  {
+    title: "밥 제공합니다",
+    houseID: 12,
+    placeID: 5,
+    placeName: "관악구",
+    place: "서울시 관악구 신림로 15길 31",
+    gender: "남성전용",
+    deposit: 120,
+    rent: 40,
+    imgPath:
+      "https://t1.daumcdn.net/estate/interior/story/c53a89ba6b984d2584bd3abb75893805",
+  },
+  {
+    title: "월세 30만원 ",
+    houseID: 13,
+    placeID: 5,
+    placeName: "관악구",
+    place: "서울시 관악구 신림로 374",
+    gender: "남성전용",
+    deposit: 120,
+    rent: 40,
+    imgPath: "https://t1.daumcdn.net/cfile/tistory/2258C048564B8E042A",
+  },
+  {
+    title: "가로수길 10분컷 ",
+    houseID: 14,
+    placeID: 1,
+    placeName: "강남구",
+    place: "서울시 강남구 논현동 46-2",
+    gender: "여성전용",
+    deposit: 300,
+    rent: 55,
+    imgPath:
+      "https://lh3.googleusercontent.com/sIjEoe2mdZP0QNYKAcAaKNIYnnKZBiqZ9EJPQMH6ID1KHm8Oe1Fk_j2noQU2FFyrGYB-LSbVJO27LdMyN88VRUss14gSO0DwrhqAmJv1FtysIuD2mA4iYEZwlTuSe3c85kDmVUmD1NDI0tZdGkPxe49ih91CHh3Dy_g-i_B2GAV5iJCHG2bea2AUaqCZdQ",
+  },
+  {
+    title: "잠원중앞 아파트",
+    houseID: 15,
+    placeID: 15,
+    placeName: "서초구",
+    place: "서울시 서초구 잠원로 88",
+    gender: "여성전용",
+    deposit: 300,
+    rent: 55,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgANQWfFaCS8r1E3Kz52BrhcNwLYmB-ow5Xg&usqp=CAU",
+  },
+];
+
+export const favorite = [
+  {
+    title: "잠원중앞 아파트",
+    houseID: 15,
+    placeID: 15,
+    placeName: "서초구",
+    place: "서울시 서초구 잠원로 88",
+    gender: "여성전용",
+    deposit: 300,
+    rent: 55,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgANQWfFaCS8r1E3Kz52BrhcNwLYmB-ow5Xg&usqp=CAU",
+  },
+  {
+    title: "welcome",
+    houseID: 9,
+    placeID: 2,
+    placeName: "강동구",
+    place: "서울시 강동구 성내동 540",
+    gender: "여성전용",
+    imgPath:
+      "https://contents-cdn.viewus.co.kr/image/230131/eebcdc29-620a-455d-be3e-6b9e9af82d9b.jpeg",
+  },
 ];

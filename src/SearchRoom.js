@@ -13,15 +13,13 @@ export default function SearchRoom() {
   const [open, setOpen] = useState(false);
   const [selectHouse, setHouse] = useState();
   const { houseId } = useParams();
-  console.log(houseId);
 
   const { region, gender, filteredhouse } = useSelector(
     (state) => state.search
   );
-  console.log("페이지", region, gender, filteredhouse);
 
   useEffect(() => {
-    region === "" || setFiltered(filteredhouse);
+    setFiltered(filteredhouse);
   }, [filteredhouse]);
 
   return (
@@ -59,6 +57,7 @@ export default function SearchRoom() {
               ) : (
                 filtered.map((v) => (
                   <Link
+                    key={v.houseID}
                     to={`/search/${v.houseID}`}
                     style={{
                       color: "black",
@@ -67,7 +66,7 @@ export default function SearchRoom() {
                     }}
                     onClick={() => setHouse(v)}
                   >
-                    <HouseItem key={v.houseID} id={v.houseID}></HouseItem>
+                    <HouseItem key={v.houseID} houseid={v.houseID}></HouseItem>
                   </Link>
                 ))
               )}

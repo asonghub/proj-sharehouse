@@ -1,0 +1,44 @@
+.favorite-body {
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw;
+}
+
+.favorite-list {
+  width: 80%;
+}
+
+.favorite-title {
+  font-family: "Galmuri9";
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  //   border-radius: 1rem 1rem 0 0;
+  //   color: rgb(234, 94, 118);
+  padding: 3px;
+  //   margin-top: 0.2rem;
+  background-color: rgba(234, 94, 117, 0.59);
+  color: white;
+}
+
+.house-list2 {
+  width: 100%;
+}
+
+.inputb {
+  width: 80%;
+  margin: 5%;
+}
+
+#inputGroup-sizing-lg {
+  width: 120px;
+}
+
+.btn {
+  position: relative;
+  left: 80%;
+  cursor: pointer;
+  border-color: white !important;
+  background-color: rgb(234, 94, 118) !important;
+}

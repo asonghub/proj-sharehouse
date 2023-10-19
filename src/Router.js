@@ -8,6 +8,10 @@ import { Provider } from "react-redux";
 import store from "./store";
 import HouseDetail from "./HouseDetail";
 import Login from "./Login";
+import Favorite from "./Favorite";
+import NotFound from "./404";
+import MyNavbar from "./yk";
+import Contact from "./Contact";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +32,12 @@ const Router = createBrowserRouter([
           {
             path: ":houseId",
             element: <HouseDetail />,
+            children: [
+              {
+                path: "contact",
+                element: <Contact />,
+              },
+            ],
           },
         ],
       },
@@ -43,7 +53,21 @@ const Router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {
+        path: "/favorite",
+        element: <Favorite />,
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
+  },
+
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

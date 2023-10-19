@@ -44,7 +44,8 @@ export default function Search() {
           style={{ cursor: "pointer" }}
         >
           <option>지역을 선택하세요</option>
-          <option value={true}>전체</option>
+          <option>전체</option>
+          {/* <option value={true}>전체</option> */}
           {seoul.map((v) => (
             <option value={v.name} key={v.id}>
               {v.name}
@@ -68,8 +69,8 @@ export default function Search() {
           style={{ cursor: "pointer", fontSize: "1rem" }}
         >
           <option>성별타입</option>
-
-          <option value={true}>전체</option>
+          <option>전체</option>
+          {/* <option value={true}>전체</option> */}
           <option>남성전용</option>
           <option>여성전용</option>
         </Form.Select>

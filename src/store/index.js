@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 import searchSlice from "./search";
-import filterSlice from "./houseFilter";
+import loginSlice from "./login";
 
 const store = configureStore({
-  reducer: { search: searchSlice, filter: filterSlice },
+  reducer: { search: searchSlice, login: loginSlice },
 });
 
 export default store;

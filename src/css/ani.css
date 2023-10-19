@@ -1,0 +1,35 @@
+.running-container {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  position: relative;
+}
+
+.home {
+  width: 25%;
+  padding: 2% 2% 0 2%;
+  animation: move 3s infinite linear;
+}
+
+.man-container {
+  width: 75%;
+  display: flex;
+  align-items: end;
+}
+
+.man-wrapper {
+  position: absolute;
+  width: 13%;
+  right: 0;
+  animation: move 3s infinite linear;
+}
+
+@keyframes move {
+  from {
+    right: 0;
+  }
+  to {
+    right: 83%;
+    color: pink;
+  }
+}

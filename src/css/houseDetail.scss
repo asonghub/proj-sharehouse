@@ -158,3 +158,16 @@
   box-shadow: -1px 4px 12px 5px #b5787179;
   z-index: 999999999999 !important;
 }
+
+.customoverlay {
+  width: fit-content;
+  background-color: rgb(229, 116, 116);
+  border-radius: 5px;
+  padding: 0.1rem 0.25rem;
+  position: relative;
+  bottom: 15px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
