@@ -1,20 +1,11 @@
 import Search from "./Search";
-import Lottie from "react-lottie"; //예제1
+// import Lottie from "react-lottie"; //예제1
 // import { Player, Controls } from "@lottiefiles/react-lottie-player"; //예제2
-import LottieData from "./running.json";
+// import LottieData from "./running.json";
 import Ani from "./Ani.js";
 import "./css/home.scss";
 
 export default function Home() {
-  const defaultOptions = {
-    //예제1
-    loop: true,
-    autoplay: true,
-    animationData: LottieData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <>
       <div className="home-body">
